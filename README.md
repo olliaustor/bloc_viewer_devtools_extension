@@ -36,7 +36,7 @@ tool/build_extension.sh           build_and_copy + validate
 ```yaml
 dev_dependencies:   # or dependencies
   bloc_viewer:
-    path: /Users/oliversass/stash/private/flutter/bloc_viewer/packages/bloc_viewer
+    path: [PATH TO REPOSITORY]/packages/bloc_viewer
 ```
 ```dart
 void main() {
