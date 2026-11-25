@@ -1,0 +1,21 @@
+name: bloc_viewer_example
+description: Demo app for the Bloc Viewer DevTools extension.
+publish_to: none
+version: 0.0.1
+
+environment:
+  sdk: ^3.14.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  # Path dependency: DevTools finds extension/devtools/ inside this package.
+  bloc_viewer:
+    path: ../bloc_viewer
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

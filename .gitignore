@@ -1,0 +1,13 @@
+.dart_tool/
+.packages
+build/
+!packages/bloc_viewer/extension/devtools/build/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+.idea/workspace.xml
+.idea/libraries/
+*.iml
+.DS_Store
+CLAUDE.md
+OVERVIEW.md

@@ -1,0 +1,22 @@
+name: bloc_viewer_devtools_extension
+description: DevTools extension that shows all live Cubits/Blocs in a tree.
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ^3.14.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  devtools_extensions: ^0.5.1
+  devtools_app_shared: ^0.5.1
+  vm_service: '>=13.0.0 <16.0.0'
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
