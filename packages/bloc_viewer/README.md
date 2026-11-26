@@ -32,7 +32,7 @@ Add the package (it is only needed while debugging, but `dependencies` works too
 
 ```yaml
 dev_dependencies:
-  bloc_viewer: ^0.0.1
+  bloc_viewer: ^0.0.2
 ```
 
 Install it first thing in `main()`, before any bloc is created:

@@ -1,5 +1,5 @@
 name: bloc_viewer
 issueTracker: https://github.com/olliaustor/bloc_viewer_devtools_extension/issues
-version: 0.0.1
+version: 0.0.2
 materialIconCodePoint: '0xe044'
 requiresConnection: true

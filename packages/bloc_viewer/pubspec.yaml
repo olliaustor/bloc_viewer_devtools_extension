@@ -1,6 +1,6 @@
 name: bloc_viewer
 description: Shows all live Cubits and Blocs of a running app, with state changes and live editing, in a Flutter DevTools extension.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/olliaustor/bloc_viewer_devtools_extension/tree/main/packages/bloc_viewer
 issue_tracker: https://github.com/olliaustor/bloc_viewer_devtools_extension/issues
 topics:
@@ -23,7 +23,7 @@ environment:
   sdk: ^3.14.0
 
 dependencies:
-  bloc: '>=8.0.0 <10.0.0'
+  bloc: '>=8.1.0 <10.0.0'
   meta: ^1.19.0
 
 dev_dependencies:

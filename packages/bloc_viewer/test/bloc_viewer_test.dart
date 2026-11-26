@@ -23,7 +23,7 @@ class ValueCubit<T> extends Cubit<T> {
 }
 
 class NoopObserver extends BlocObserver {
-  const NoopObserver();
+  NoopObserver();
 }
 
 class NullableCubit extends Cubit<Object?> {
@@ -229,7 +229,7 @@ void main() {
 
     test('failing postEvent is logged, not thrown', () {
       BlocViewer.overrideVmHooks(
-        postEvent: (_, __) => throw StateError('no vm'),
+        postEvent: (_, _) => throw StateError('no vm'),
         registerExtension: (m, h) {},
       );
       expect(BlocViewer.install, returnsNormally);
@@ -237,7 +237,7 @@ void main() {
 
     test('registerExtension failure is swallowed', () {
       BlocViewer.overrideVmHooks(
-        postEvent: (_, __) {},
+        postEvent: (_, _) {},
         registerExtension: (m, h) => throw ArgumentError('dup'),
       );
       expect(BlocViewer.install, returnsNormally);
@@ -328,7 +328,7 @@ void main() {
     test('failing postEvent does not break the app', () async {
       final c = CounterCubit();
       BlocViewer.overrideVmHooks(
-          postEvent: (_, __) => throw StateError('no vm'),
+          postEvent: (_, _) => throw StateError('no vm'),
           registerExtension: (m, h) {});
       await flush();
       expect(c.inc, returnsNormally);
